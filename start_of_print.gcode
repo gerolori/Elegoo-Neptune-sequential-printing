@@ -5,7 +5,7 @@ M221 S100 ;Set the flow rate to 100%
 M104 S120 ;Set nozzle temperature to preheat 120
 M190 S[bed_temperature_initial_layer_single]
 G90 ;Absolute positioning
-;G28 ;home, uncomment yours if the printer doesn't double home
+;G28 ;home
 
 G1 Z3  X-10 Y235 F6000 ;Move to edge of the bed
 
