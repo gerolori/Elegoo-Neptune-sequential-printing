@@ -1,5 +1,4 @@
 # Elegoo Neptune 4/4 Pro sequential printing
-Guide on how to setup sequential printing on Neptune 4/4 Pro
 DISCLAIMER: if you're running the stock Elegoo firmware you won't be able to achieve fully automatic printing. The g-code snippets will still work but you won't be able to queue any jobs. You could still remotely trigger the next job to simulate the desired behaviour.
 To unlock the job queue function of Klipper you should upgrade to [OpenNept4ne](https://github.com/OpenNeptune3D/OpenNept4une)
 
