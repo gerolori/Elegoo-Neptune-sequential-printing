@@ -7,10 +7,10 @@ Use the smooth part of the PEI bed if you're still using the original. Consider 
 
 # Instructions
 ### Purge bin
-[Click here](https://thangs.com/search/neptune%20bin?scope=all) for some exampple of bins, print any that you like. Any bin that will cover the extreme left of the x axis will work. I'll eventually release mine with a slope so that the purge lines will fall to the bottom when cold.
+[Click here](https://thangs.com/search/neptune%20bin?scope=all) for some example of bins, print any that you like. Any bin that will cover the extreme left of the x axis will work. I'll eventually release mine with a slope so that the purge lines will fall to the bottom when cold.
 ### Slicer settings
 Put the start_of_print.gcode and end_of_print.gcode in the respective sections of your printer settings in your slicer.
 ### Klipper job queue mode
-Have a look at the [documentation]([url](https://moonraker.readthedocs.io/en/latest/configuration/)) as there are many more options to run this. If you want simple continuous print when starting a print, then add the moonraker.conf text in the right section of your moonraker.conf. Remember to reboot your printer for the changes to take effect.
+Have a look at the [documentation](https://moonraker.readthedocs.io/en/latest/configuration/#job_queue) as there are many more options to run this. If you want simple continuous print when starting a print, then add the moonraker.conf text in the right section of your moonraker.conf. Remember to reboot your printer for the changes to take effect.
 ## Continuous print of a single object
 If you're looking to specify a number of copies and having the printer print them automatically, go take a look at [this awesome repository](https://github.com/hessfab/continuous-prints-klipper)
