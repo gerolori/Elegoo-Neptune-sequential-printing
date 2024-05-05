@@ -24,5 +24,14 @@ G1 X20
 G1 X-20
 G1 X20
 G1 X-20
+
+; uncomment next section if you have a wire brush on the bottom left corner and want the head to wipe there
+;G1 X25 Y0 Z10 F1000
+;G28 X0 Y0
+;G1 Y50 Z5 F1000
+;G1 Y0 Z5 F1000
+;G1 Y50 Z5 F1000
+;G1 X25 Y50 Z20 F1000 
+
 G90 ;Turns absolute positioning back on
 G92 E0 ;Reset Extruder
