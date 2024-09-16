@@ -10,7 +10,7 @@ M140 S0 ;Turn-off bed
 
 ;cooling
 M106 S255 ;Turn-on fan to cool bed faster
-TEMPERATURE_WAIT SENSOR=heater_bed MAXIMUM=40 ;Wait for temperature of bed to bed 40°C
+TEMPERATURE_WAIT SENSOR=heater_bed MAXIMUM=29 ;Wait for temperature of bed to bed 29°C
 M106 S0 ;Turn-off fan
 
 ;clearing bed
