@@ -17,11 +17,11 @@ A collection of G-code scripts and configuration files to enable sequential/auto
 
 ## Features
 
-- 🔄 **Automatic job queuing** - Queue multiple prints and let them run unattended
-- 🧊 **Smart bed cooling** - Waits for bed to cool to 29°C for easy part removal
-- 🚀 **Auto bed clearing** - Automatically pushes finished prints to the back
-- 🔥 **Proper purging** - Cleans nozzle before each print starts
-- ⚡ **Optimized workflow** - Efficient heating and positioning sequences
+- **Automatic job queuing** - Queue multiple prints and let them run unattended
+- **Smart bed cooling** - Waits for bed to cool to 29°C for easy part removal
+- **Auto bed clearing** - Automatically pushes finished prints to the back
+- **Proper purging** - Cleans nozzle before each print starts
+- **Optimized workflow** - Efficient heating and positioning sequences
 
 ## Prerequisites
 
@@ -42,8 +42,8 @@ A collection of G-code scripts and configuration files to enable sequential/auto
 
 **Important:** Choosing the right build surface is critical for successful automatic bed clearing.
 
-- ✅ **Recommended:** Use the **smooth side** of the PEI bed if you're still using the original
-- ✅ **Alternative:** Upgrade to a **glass bed** (requires changing the probe too - the original probe works with magnetic PEI only; if not changed, the nozzle will dig into the glass during calibration)
+- **Recommended:** Use the **smooth side** of the PEI bed if you're still using the original
+- **Alternative:** Upgrade to a **glass bed** (requires changing the probe too - the original probe works with magnetic PEI only; if not changed, the nozzle will dig into the glass during calibration)
 - ⚠️ **Not recommended:** Using the textured PEI bed will potentially **damage your motors** or cause belt skipping due to excessive grip at 29°C
 
 **If you must use the textured PEI:**
@@ -61,7 +61,7 @@ A purge bin is required to collect the filament purged during the start sequence
 - Any bin that covers the extreme left of the X-axis will work
 - Position it at X=-10 (left edge of the bed)
 
-💡 *Tip: Look for bins with a sloped design so purge lines fall to the bottom when cooled.*
+*Tip: Look for bins with a sloped design so purge lines fall to the bottom when cooled.*
 
 ### 2. Slicer Configuration
 
@@ -87,7 +87,7 @@ To enable automatic job transitions:
    ```
 3. **Reboot your printer** for changes to take effect
 
-📚 For more configuration options, see the [official Moonraker documentation](https://moonraker.readthedocs.io/en/latest/configuration/#job_queue).
+For more configuration options, see the [official Moonraker documentation](https://moonraker.readthedocs.io/en/latest/configuration/#job_queue).
 
 ## Alternative Solutions
 
