@@ -18,7 +18,7 @@ A collection of G-code scripts and configuration files to enable sequential/auto
 ## Features
 
 - **Automatic job queuing** - Queue multiple prints and let them run unattended
-- **Smart bed cooling** - Waits for bed to cool to 29°C for easy part removal
+- **Smart bed cooling** - Waits for bed to cool to 25°C for easy part removal
 - **Auto bed clearing** - Automatically pushes finished prints to the back
 - **Proper purging** - Cleans nozzle before each print starts
 - **Optimized workflow** - Efficient heating and positioning sequences
@@ -44,12 +44,12 @@ A collection of G-code scripts and configuration files to enable sequential/auto
 
 - **Recommended:** Use the **smooth side** of the PEI bed if you're still using the original
 - **Alternative:** Upgrade to a **glass bed** (requires changing the probe too - the original probe works with magnetic PEI only; if not changed, the nozzle will dig into the glass during calibration)
-- ⚠️ **Not recommended:** Using the textured PEI bed will potentially **damage your motors** or cause belt skipping due to excessive grip at 29°C
+- ⚠️ **Note:** The textured PEI bed has stronger adhesion and may require the default cooling temperature
 
-**If you must use the textured PEI:**
-- Lower the cooling temperature to 25°C in the `end_of_print.gcode` file
-- Understand this is at your own risk and may have mixed results
-- Monitor the first few prints to ensure parts release properly
+**Temperature Optimization:**
+- **Default:** The cooling temperature is set to **25°C** for safe part release across all bed surfaces
+- **For faster printing with smooth sheet:** You can raise the cooling temperature to **29°C** in the `end_of_print.gcode` file for quicker release and shorter cycle times
+- Monitor the first few prints to ensure parts release properly when adjusting temperature
 
 ## Setup Instructions
 
@@ -99,7 +99,7 @@ If you're looking to print multiple copies of the same object automatically (rat
 
 1. **Start sequence:** Preheats bed → homes printer → moves to purge position → purges filament → begins print
 2. **Print completes:** End sequence activates
-3. **Cooling phase:** Bed cools to 29°C (adjustable) for easy part release
+3. **Cooling phase:** Bed cools to 25°C (adjustable) for easy part release
 4. **Bed clearing:** Bed moves forward, pushing the part to the back
 5. **Next job:** If jobs are queued, the next print starts automatically
 
